@@ -7,4 +7,6 @@ import './index.css';
 
 const rootDiv = document.querySelector('#root');
 
-ReactDOM.render(<CounterApp valor = {0}/>,rootDiv)
+
+//ReactDOM.render(<PrimeraApp saludo = 'Hola'/>,rootDiv)
+ReactDOM.render(<CounterApp  valor = {0}/>,rootDiv)

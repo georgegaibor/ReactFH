@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';  
 
-const CounterApp = ( {valor} ) => {
+const CounterApp = ( {valor = 10} ) => {
     /*BEWARE OF USING RESERVED WORDS FOR VARIABLE NAMES */
     const [counter, setCounter] = useState(valor);
     
@@ -28,7 +28,7 @@ const CounterApp = ( {valor} ) => {
 }
 
 CounterApp.propTypes = {
-    valor: PropTypes.number.isRequired
+    valor: PropTypes.number
 }
 
 export default CounterApp;
